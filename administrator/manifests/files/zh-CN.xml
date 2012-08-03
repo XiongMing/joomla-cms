@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="1.6" method="upgrade" client="site">
+    <name><![CDATA[akeebabackup-zh-CN]]></name>
+    <author><![CDATA[AkeebaBackup.com]]></author>
+    <authorurl>http://www.akeebabackup.com</authorurl>
+	<copyright>Copyright (C)2012 AkeebaBackup.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>0.0.20123007132346</version>
+    <creationDate>30 Jul 2012</creationDate>
+    <description><![CDATA[Chinese (Simplified) translation file for Akeeba Backup]]></description>
+	<fileset>
+		<files folder="backend" target="administrator/language/zh-CN">
+			<filename>zh-CN.com_akeeba.ini</filename>
+			<filename>zh-CN.com_akeeba.menu.ini</filename>
+			<filename>zh-CN.com_akeeba.sys.ini</filename>
+			<filename>zh-CN.mod_akadmin.ini</filename>
+			<filename>zh-CN.mod_akadmin.sys.ini</filename>
+			<filename>zh-CN.plg_system_akeebaupdatecheck.ini</filename>
+			<filename>zh-CN.plg_system_akeebaupdatecheck.sys.ini</filename>
+			<filename>zh-CN.plg_system_aklazy.ini</filename>
+			<filename>zh-CN.plg_system_aklazy.sys.ini</filename>
+			<filename>zh-CN.plg_system_oneclickaction.ini</filename>
+			<filename>zh-CN.plg_system_oneclickaction.sys.ini</filename>
+			<filename>zh-CN.plg_system_srp.ini</filename>
+			<filename>zh-CN.plg_system_srp.sys.ini</filename>
+		</files>
+		<files folder="frontend" target="language/zh-CN">
+			<filename>zh-CN.com_akeeba.ini</filename>
+		</files>
+	</fileset>
+</extension>
