@@ -1,0 +1,31 @@
+DEBUG   |120803 12:35:56|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:35:56| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:35:57|
+DEBUG   |120803 12:36:00|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:36:00| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:36:00|
+DEBUG   |120803 12:38:35|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:38:35| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:38:35|
+DEBUG   |120803 12:38:45|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:38:45| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:38:45|
+DEBUG   |120803 12:38:48|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:38:48| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:38:48|
+DEBUG   |120803 12:48:24|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:48:24| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:48:25|
+DEBUG   |120803 12:48:30|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:48:30| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:48:30|
+DEBUG   |120803 12:48:38|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:48:38| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:48:38|
+DEBUG   |120803 12:48:54|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:48:54| -- Stored Akeeba Factory (backend) not found - hard reset
+DEBUG   |120803 12:48:56|
+DEBUG   |120803 12:57:19|Kettenrad :: Attempting to load from database (backend)
+DEBUG   |120803 12:57:19| -- Stored Akeeba Factory (backend) not found - hard reset
+ERROR   |120803 12:57:22|The process was aborted on user's request
+DEBUG   |120803 12:57:22|
