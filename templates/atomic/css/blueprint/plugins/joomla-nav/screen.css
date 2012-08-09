@@ -10,15 +10,17 @@
 ----------------------------------------------------------------------- */
 
 .joomla-nav {
-  background-color:#c3d9ff;
+  /*background-color:#c3d9ff;*/
+  background-color:#4a824d;
   border-top:1px solid #b3c9e4;
   border-bottom:1px solid #b3c9ef;
   height:1%; /* fixing IE 6 */
   margin:0 0 1.5em 0;
   min-height:auto;
   overflow:auto;
-  padding:0.67em 0 0.67em 0;
+  padding:0.37em 0 0.37em 0;
 }
+.joomla-nav.blue {background-color:#166d8a;}
 .joomla-nav li {
   float:left;
   line-height:1.5;
@@ -27,11 +29,12 @@
   padding:0;
 }
 .joomla-nav li a {
-  color:#222;
+  color:#FFF;
   cursor:pointer;
   display:block;
   float:left;
   font-weight:bold;
+  font-size: 15px;
   padding:0 .33em 0 .33em;
 }
 .joomla-nav li a.selected {
@@ -42,7 +45,7 @@
   text-decoration:none;
 }
 .joomla-nav li a:focus, .joomla-nav li a:hover {
-  color:#555;
+  color:#F00;
   outline:none;
 }
 .joomla-nav li.label {

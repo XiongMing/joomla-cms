@@ -26,6 +26,7 @@ $app = JFactory::getApplication();
 		<!--[if lt IE 8]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/joomla-nav/screen.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/gf/gf_articles_category.css" type="text/css" media="screen" />
 
 		<!-- The following line loads the template CSS file located in the template folder. -->
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
@@ -52,9 +53,15 @@ $app = JFactory::getApplication();
 				</div>
 			<?php endif; ?>
 		</div>
-		<?php if($this->countModules('atomic-topmenu') or $this->countModules('position-2') ) : ?>
+		<?php if($this->countModules('atomic-topmenu') or $this->countModules('position-1') ) : ?>
 			<jdoc:include type="modules" name="atomic-topmenu" style="container" />
 			<jdoc:include type="modules" name="position-1" style="container" />
+		<?php endif; ?>
+
+		<?php if($this->countModules('gf-articles')) : ?>
+			<div class="container">
+				<jdoc:include type="modules" name="gf-articles" style="gf_articles" />
+			</div>
 		<?php endif; ?>
 
 		<div class="container">
@@ -104,6 +111,7 @@ $app = JFactory::getApplication();
 				&copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
 			</div>
 		</div>
+				
 		<jdoc:include type="modules" name="debug" />
 	</body>
 </html>

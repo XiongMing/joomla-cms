@@ -53,4 +53,23 @@ function modChrome_sidebar($module, &$params, &$attribs)
 		<?php echo $module->content; ?>
 	<?php endif;
 }
+function modChrome_gf_articles($module, &$params, &$attribs)
+{
+	if (!empty($module->content)) :
+	$catids = $params->get('catid');
+	if (is_array($catids)) {
+		$catid = $catids[0];
+	} else {
+		$catid = empty($catids) ? 0 : $catids; 
+	}
+	?>
+		<div class="gf-articles-category<?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+			<div class="title">
+				<span class="title"><?php echo $module->title ?></span>
+				<a class="more" href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($catid)) ?>"><?php echo JText::_('MOD_GF_ARTICLES_CATEGORY_MORE') ?></a>
+			</div>
+			<?php echo $module->content; ?>
+		</div>
+	<?php endif;;
+}
 ?>
