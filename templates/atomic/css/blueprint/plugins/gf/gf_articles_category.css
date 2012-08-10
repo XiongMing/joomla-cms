@@ -8,7 +8,7 @@
 	vertical-align:top;
 	margin-bottom:1.2em;
 }
-.gf-articles-category .right{display:block;}
+.gf-articles-category .left{fload:none;}
 .gf-articles-category div.title {
 	border-bottom:1px solid #b3c9ef;
 	background-color:#4a824d;
