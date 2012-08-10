@@ -32,7 +32,7 @@
 	v-align:bottom;
 	padding:0.7em 1.1em 0.37em 0em;
 }
-
+.gf-articles-category div a.more:hover {color:yellow;}
 .gf-articles-category h4 {
 	margin: 0.5em 0em 0.5em 0em;
 }
