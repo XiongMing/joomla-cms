@@ -34,8 +34,6 @@
 					</option>
 				</field>
 			</fieldset>
-				
-			</fieldset>
 
 			<fieldset name="filtering"
 				label="MOD_GF_ARTICLES_CATEGORY_FIELD_GROUP_FILTERING_LABEL"
