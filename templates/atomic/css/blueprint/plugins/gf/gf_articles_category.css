@@ -8,6 +8,7 @@
 	vertical-align:top;
 	margin-bottom:1.2em;
 }
+.gf-articles-category .right{display:block;}
 .gf-articles-category div.title {
 	border-bottom:1px solid #b3c9ef;
 	background-color:#4a824d;
@@ -38,6 +39,9 @@
 }
 .gf-articles-category li a {
 	font-size: 12px;
+}
+
+.gf-articles-category .gf-articles-category{
 }
 /*.joomla-nav li a.selected {
   color:#555;
