@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<view title="com_content_archive_view_default_title">
+	<view title="com_home">
 		<message>
-			<![CDATA[com_content_archive_view_default_desc]]>
+			<![CDATA[COM_HOME]]>
 		</message>
 	</view>
+	<layout title="COM_HOME">
+	  <message><![CDATA[COM_HOME]]></message>
+	</layout>
 </metadata>
