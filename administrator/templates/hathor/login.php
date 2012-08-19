@@ -79,7 +79,7 @@ $file = 'language/'.$lang->getTag().'/'.$lang->getTag().'.css';
 
 			<!-- Beginning of Actual Content -->
 			<div id="element-box" class="login">
-				<div class="pagetitle"><h2><?php echo JText::_('COM_LOGIN_JOOMLA_ADMINISTRATION_LOGIN') ?></h2></div>
+				<div class="pagetitle"><h2><?php echo $app->getCfg('sitename') ?><?php echo JText::_('COM_LOGIN_JOOMLA_ADMINISTRATION_LOGIN') ?></h2></div>
 
 					<!-- System Messages -->
 					<jdoc:include type="message" />
@@ -108,8 +108,7 @@ $file = 'language/'.$lang->getTag().'/'.$lang->getTag().'.css';
 	<!-- Footer -->
 	<div id="footer">
 		<p class="copyright">
-			<?php $joomla= '<a href="http://www.joomla.org">Joomla!&#174;</a>';
-			echo JText::sprintf('JGLOBAL_ISFREESOFTWARE', $joomla) ?>
+			&copy<?php echo $app->getCfg('sitename'); ?>
 		</p>
 	</div>
 </body>

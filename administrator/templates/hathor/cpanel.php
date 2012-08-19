@@ -167,8 +167,7 @@ $file = 'language/'.$lang->getTag().'/'.$lang->getTag().'.css';
 	<div id="footer">
 		<jdoc:include type="modules" name="footer" style="none"  />
 		<p class="copyright">
-			<?php $joomla= '<a href="http://www.joomla.org">Joomla!&#174;</a>';
-			echo JText::sprintf('JGLOBAL_ISFREESOFTWARE', $joomla) ?>
+			&copy<?php echo $app->getCfg('sitename'); ?>
 		</p>
 	</div>
 </body>

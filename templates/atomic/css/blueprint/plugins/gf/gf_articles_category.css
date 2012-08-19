@@ -39,12 +39,19 @@
 .gf-articles-category h4 {
 	margin: 0.5em 0em 0.5em 0em;
 }
-.gf-articles-category li a {
-	font-size: 12px;
+.gf-articles-category li {
+	/*display:block;*/
 }
 
-.gf-articles-category .gf-articles-category{
+.gf-articles-category li a {
+	font-size:12px;
 }
+
+.gf-articles-category span.mod-gf-articles-category-date {
+	/*display:inline-block;*/
+	float:right;
+}
+
 /*.joomla-nav li a.selected {
   color:#555;
   cursor:default;
