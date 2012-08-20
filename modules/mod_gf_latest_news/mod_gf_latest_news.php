@@ -49,7 +49,7 @@ $cacheid = md5(serialize(array ($idbase, $module->module)));
 
 $cacheparams = new stdClass;
 $cacheparams->cachemode = 'id';
-$cacheparams->class = 'modGFArticlesCategoryHelper';
+$cacheparams->class = 'modGFLatestNewsHelper';
 $cacheparams->method = 'getList';
 $cacheparams->methodparams = $params;
 $cacheparams->modeparams = $cacheid;
@@ -70,11 +70,11 @@ if (!empty($list)) {
 		{
 			case 'year':
 			case 'month_year':
-				$list = modGFArticlesCategoryHelper::groupByDate($list, $article_grouping, $article_grouping_direction, $params->get('month_year_format', 'F Y'));
+				$list = modGFLatestNewsHelper::groupByDate($list, $article_grouping, $article_grouping_direction, $params->get('month_year_format', 'F Y'));
 				break;
 			case 'author':
 			case 'category_title':
-				$list = modGFArticlesCategoryHelper::groupBy($list, $article_grouping, $article_grouping_direction);
+				$list = modGFLatestNewsHelper::groupBy($list, $article_grouping, $article_grouping_direction);
 				break;
 			default:
 				break;
