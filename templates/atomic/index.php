@@ -45,76 +45,62 @@ $app = JFactory::getApplication();
 	</head>
 	<body>
 		<div class="container">
-			<hr class="space" />
+			<?php if($this->countModules('gf_header')) : ?>
+				<jdoc:include type="modules" name="gf-header" style="none" />
+			<?php endif; ?>
 			<div class="joomla-header span-16 append-1">
 				<h1><?php echo htmlspecialchars($app->getCfg('sitename')); ?></h1>
 			</div>
-			<?php if($this->countModules('atomic-search') or $this->countModules('position-0')) : ?>
-				<div class="joomla-search span-7 last">
-	  	 			<jdoc:include type="modules" name="atomic-search" style="none" />
-	  	 			<jdoc:include type="modules" name="position-0" style="none" />
+		</div>
+		
+		<?php if($this->countModules('gf-topmenu')) : ?>
+			<jdoc:include type="modules" name="gf-topmenu" style="container" />
+		<?php endif; ?>
+
+		<div class="container">
+			<?php if($this->countModules('gf-left-1') || $this->countModules('gf-left-2')
+			|| $this->countModules('gf-left-3') || $this->countModules('gf-left-4')) : ?>
+				<div class="span-7 last">
+					<jdoc:include type="modules" name="gf-left-1" style="sidebar" />
+					<jdoc:include type="modules" name="gf-left-2" style="sidebar" />
+					<jdoc:include type="modules" name="gf-left-3" style="sidebar" />
+					<jdoc:include type="modules" name="gf-left-4" style="sidebar" />
+				</div>
+			<?php endif; ?>
+
+			<jdoc:include type="message" />
+			<jdoc:include type="component" />
+			<hr />
+
+			<?php if($this->countModules('gf-right-1') || $this->countModules('gf-right-2')
+			|| $this->countModules('gf-right-3') || $this->countModules('gf-right-4')) : ?>
+				<div class="span-7 last">
+					<jdoc:include type="modules" name="gf-right-1" style="sidebar" />
+					<jdoc:include type="modules" name="gf-right-2" style="sidebar" />
+					<jdoc:include type="modules" name="gf-right-3" style="sidebar" />
+					<jdoc:include type="modules" name="gf-right-4" style="sidebar" />
 				</div>
 			<?php endif; ?>
 		</div>
-		<?php if($this->countModules('atomic-topmenu') or $this->countModules('position-1') ) : ?>
-			<jdoc:include type="modules" name="atomic-topmenu" style="container" />
-			<jdoc:include type="modules" name="position-1" style="container" />
-		<?php endif; ?>
 
 		<?php if($this->countModules('gf-articles')) : ?>
 			<div class="container">
 				<jdoc:include type="modules" name="gf-articles" style="gf_articles" />
 			</div>
 		<?php endif; ?>
-
+		
 		<div class="container">
-			<?php if($this->countModules('atomic-sidebar') || $this->countModules('position-7')
-			|| $this->countModules('position-4') || $this->countModules('position-5')
-			|| $this->countModules('position-3') || $this->countModules('position-6') || $this->countModules('position-8'))
-			: ?>
-				<div class="span-7 last">
-					<jdoc:include type="modules" name="atomic-sidebar" style="sidebar" />
-					<jdoc:include type="modules" name="position-7" style="sidebar" />
-					<jdoc:include type="modules" name="position-4" style="sidebar" />
-					<jdoc:include type="modules" name="position-5" style="sidebar" />
-					<jdoc:include type="modules" name="position-6" style="sidebar" />
-					<jdoc:include type="modules" name="position-8" style="sidebar" />
-					<jdoc:include type="modules" name="position-3" style="sidebar" />
+			<?php if($this->countModules('gf-footer')) : ?>
+				<div class="joomla-footer span-7 last">
+					<jdoc:include type="modules" name="gf-footer" style="bottommodule" />
 				</div>
-			<?php endif; ?>
-
-			<div class="span-16 prepend-1">
-			<?php if($this->countModules('atomic-topquote') or $this->countModules('position-15') ) : ?>
-				<jdoc:include type="modules" name="atomic-topquote" style="none" />
-				<jdoc:include type="modules" name="position-15" style="none" />
-
-			<?php endif; ?>
-				<jdoc:include type="message" />
-				<jdoc:include type="component" />
-				<hr />
-			<?php if($this->countModules('atomic-bottomleft') or $this->countModules('position-11')) : ?>
-			 	<div class="span-7 colborder">
-					<jdoc:include type="modules" name="atomic-bottomleft" style="bottommodule" />
-					<jdoc:include type="modules" name="position-11" style="bottommodule" />
-				</div>
-			<?php endif; ?>
-
-			<?php if($this->countModules('atomic-bottommiddle') or $this->countModules('position-9')
-				or $this->countModules('position-10')) : ?>
-				<div class="span-7 last">
-					<jdoc:include type="modules" name="atomic-bottommiddle" style="bottommodule" />
-					<jdoc:include type="modules" name="position-9" style="bottommodule" />
-					<jdoc:include type="modules" name="position-10" style="bottommodule" />
-				</div>
-			<?php endif; ?>
-			</div>
-
+			<?php endif;?>
 			<div class="joomla-footer span-16 prepend-1">
 				<hr />
 				&copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
 			</div>
-		</div>
-				
+			</div>
+		
 		<jdoc:include type="modules" name="debug" />
 	</body>
 </html>
