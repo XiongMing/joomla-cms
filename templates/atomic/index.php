@@ -16,7 +16,7 @@ $app = JFactory::getApplication();
 <?php echo '<?'; ?>xml version="1.0" encoding="<?php echo $this->_charset ?>"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
-	<head>
+<head>
 		<!-- The following JDOC Head tag loads all the header and meta information from your site config and content. -->
 		<jdoc:include type="head" />
 
@@ -28,7 +28,8 @@ $app = JFactory::getApplication();
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/joomla-nav/screen.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/gf/gf_articles_category.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/gf/gf_latest_news.css" type="text/css" media="screen" />
-
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/gf/gf_screen.css" type="text/css" media="screen" />
+		
 		<!-- The following line loads the template CSS file located in the template folder. -->
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
 
@@ -98,14 +99,10 @@ $app = JFactory::getApplication();
 		<?php endif; ?>
 		
 		<div class="container">
-			<?php if($this->countModules('gf-footer')) : ?>
-				<div class="joomla-footer span-7 last">
-					<jdoc:include type="modules" name="gf-footer" style="bottommodule" />
-				</div>
-			<?php endif;?>
-			<div class="joomla-footer span-16 prepend-1">
+			<div class="joomla-footer span-16 prepend-1 gf-footer">
 				<hr />
 				&copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
+				<span class="rights"></>滇ICP备 <a href="http://www.miibeian.gov.cn" target="_blank" class="red">13004245</b></font></a> 号</span>
 			</div>
 			</div>
 		

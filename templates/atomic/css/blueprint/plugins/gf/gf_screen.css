@@ -1,0 +1,11 @@
+
+div.gf-footer {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div.gf-footer .rights {padding-left: 10px;}
+a.red{color: #FF0000; text-decoration:none;}
+

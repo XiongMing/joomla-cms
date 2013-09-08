@@ -30,8 +30,8 @@
 	</files>
 
 	<positions>
-		<position>gf-header</position>
-		<position>gf-footer</position>
+<!--	<position>gf-header</position>
+		<position>gf-footer</position> -->
 		<position>gf-topmenu</position>
 
 		<position>gf-articles</position>
