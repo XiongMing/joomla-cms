@@ -81,9 +81,10 @@ $app = JFactory::getApplication();
 				<jdoc:include type="modules" name="gf-union-news" style="gf-lastest-news" />
 			<?php endif; ?>
 
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-			<hr />
+			<div class="span-16 prepend-1">
+				<jdoc:include type="message" />
+				<jdoc:include type="component" />
+			</div>
 
 			<?php if($this->countModules('gf-right-1') || $this->countModules('gf-right-2')
 			|| $this->countModules('gf-right-3') || $this->countModules('gf-right-4')) : ?>
