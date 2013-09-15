@@ -70,13 +70,13 @@ $app = JFactory::getApplication();
 			<?php endif; ?>
 
 			<?php if($this->countModules('gf-picture-news')) : ?>
-				<jdoc:include type="module" name="gf-picture-news" style="gf-picture-news" />
+				<jdoc:include type="modules" name="gf-picture-news" style="gf-picture-news" />
 			<?php endif; ?>
-
+			
 			<?php if($this->countModules('gf-lastest-news')) : ?>
 				<jdoc:include type="modules" name="gf-lastest-news" style="gf-lastest-news" />
 			<?php endif; ?>
-
+			
 			<?php if($this->countModules('gf-union-news')) : ?>
 				<jdoc:include type="modules" name="gf-union-news" style="gf-lastest-news" />
 			<?php endif; ?>

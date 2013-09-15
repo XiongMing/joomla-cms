@@ -83,6 +83,8 @@
 		<filename>zh-CN.mod_articles_category.sys.ini</filename>
 		<filename>zh-CN.mod_articles_latest.ini</filename>
 		<filename>zh-CN.mod_articles_latest.sys.ini</filename>
+		<filename>zh-CN.mod_articles_picture.ini</filename>
+		<filename>zh-CN.mod_articles_picture.sys.ini</filename>
 		<filename>zh-CN.mod_articles_news.ini</filename>
 		<filename>zh-CN.mod_articles_news.sys.ini</filename>
 		<filename>zh-CN.mod_articles_popular.ini</filename>
