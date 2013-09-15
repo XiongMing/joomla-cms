@@ -69,17 +69,22 @@ $app = JFactory::getApplication();
 				</div>
 			<?php endif; ?>
 
+			<?php if($this->countModules('gf-picture-news')) : ?>
+				<jdoc:include type="module" name="gf-picture-news" style="gf-picture-news" />
+			<?php endif; ?>
+
 			<?php if($this->countModules('gf-lastest-news')) : ?>
-				<jdoc:include type="modules" name="gf-lastest-news" style="none" />
+				<jdoc:include type="modules" name="gf-lastest-news" style="gf-lastest-news" />
 			<?php endif; ?>
 
 			<?php if($this->countModules('gf-union-news')) : ?>
-				<jdoc:include type="modules" name="gf-union-news" style="none" />
+				<jdoc:include type="modules" name="gf-union-news" style="gf-lastest-news" />
 			<?php endif; ?>
 
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-			<hr />
+			<div class="span-16 prepend-1">
+				<jdoc:include type="message" />
+				<jdoc:include type="component" />
+			</div>
 
 			<?php if($this->countModules('gf-right-1') || $this->countModules('gf-right-2')
 			|| $this->countModules('gf-right-3') || $this->countModules('gf-right-4')) : ?>
