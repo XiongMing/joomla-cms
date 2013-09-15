@@ -14,7 +14,7 @@ require_once $com_path.'helpers/route.php';
 
 JModelLegacy::addIncludePath($com_path . '/models', 'ContentModel');
 
-abstract class modGFLatestNewsHelper
+abstract class modGFPictureNewsHelper
 {
 	public static function getList(&$params)
 	{

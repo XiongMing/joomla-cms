@@ -23,13 +23,40 @@
 	border:1px solid #ddd;
 }
 
-
 .gf_latest_img div.img_title {
 	width:100%;
 	height:20px;
 	float:left;
 	background-color:#4a824d;
 }
+
+.gf_picture_img {
+	width:49.6%;
+	height:300px;
+	float:left;
+	border:1px solid #ddd;
+	display:inline-block;
+	vertical-align:top;
+	margin-bottom:1.2em;
+}
+
+.gf_picture_img div.image {
+	position:relative;
+	overflow:hidden;
+	height:300px;
+	clear:both;
+	background-color:#ffffff;
+	float:left;
+	border:1px solid #ddd;
+}
+
+.gf_picture_img div.img_title {
+	width:100%;
+	height:20px;
+	float:left;
+	background-color:#4a824d;
+}
+
 #SLIDEContentID{
 	margin: 0px;
     padding: 0px;
@@ -128,7 +155,6 @@
 .gf_union_news h4 {
 	margin: 0.5em 0em 0.5em 0em;
 }
-
 
 .gf_union_news li a {
 	text-decoration:none;
