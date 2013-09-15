@@ -79,7 +79,7 @@
 
 /*seperated------------------------------*/
 
-.gf_latest_news {
+.gf_union_news {
 	width:49.6%;
 	height:320px;
 	overflow:hidden;
@@ -89,7 +89,7 @@
 	vertical-align:top;
 	margin-bottom:1.2em;
 }
-.gf_latest_news div.latest_title {
+.gf_union_news div.latest_title {
 	width:100%;
 	height:20px;
 	background-image:url(../../../../images/star.gif);
@@ -97,16 +97,16 @@
 	background-color:#4a824d;
 }
 
-.gf_latest_news div.latest_title span{
+.gf_union_news div.latest_title span{
 	font-size:12px;
 	color:white;
 	font-weight:bold;
 	padding:0.33em 0.33em 0.33em 2em;
 }
 
-.gf_latest_news.green div.title { background-color:#4a824d; }
-.gf_latest_news.blue div.title { background-color:#166d8a; }
-.gf_latest_news div span.title {
+.gf_union_news.green div.title { background-color:#4a824d; }
+.gf_union_news.blue div.title { background-color:#166d8a; }
+.gf_union_news div span.title {
 	color:#FFFFFF;
 	font-size:12px;
 	font-weight:bold;
@@ -114,7 +114,7 @@
 	/*float:left;*/
 	padding:0.33em 0.33em 0.33em 1.2em;
 }
-.gf_latest_news div a.more {
+.gf_union_news div a.more {
 	color:#FFFFFF;
 	font-size:10px;
 	font-weight:lighter;
@@ -124,12 +124,14 @@
 	v-align:bottom;
 	padding:0.7em 1.1em 0.37em 0em;
 }
-.gf_latest_news div a.more:hover {color:yellow;}
-.gf_latest_news h4 {
+.gf_union_news div a.more:hover {color:yellow;}
+.gf_union_news h4 {
 	margin: 0.5em 0em 0.5em 0em;
 }
-.gf_latest_news li a {
-	font-size: 12px;
-	font-weight:bold;
-	line-height:20px;
+
+
+.gf_union_news li a {
+	text-decoration:none;
+	line-height:26px;
+	font-size: 14px;
 }
