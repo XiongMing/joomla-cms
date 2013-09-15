@@ -81,6 +81,18 @@ $app = JFactory::getApplication();
 				<jdoc:include type="modules" name="gf-union-news" style="gf-lastest-news" />
 			<?php endif; ?>
 
+			<?php if($this->countModules('gf-gfwy')) : ?>
+				<jdoc:include type="modules" name="gf-gfwy" style="gf-gfwy" />
+			<?php endif; ?>
+
+			<?php if($this->countModules('gf-lszs')) : ?>
+				<jdoc:include type="modules" name="gf-lszs" style="gf-lszs" />
+			<?php endif; ?>
+
+			<?php if($this->countModules('gf-bcxg')) : ?>
+				<jdoc:include type="modules" name="gf-bcxg" style="gf-bcxg" />
+			<?php endif; ?>
+
 			<div class="span-16 prepend-1">
 				<jdoc:include type="message" />
 				<jdoc:include type="component" />

@@ -34,9 +34,14 @@
 		<position>gf-footer</position> -->
 		<position>gf-topmenu</position>
 
-		<position>gf-articles</position>
+		<position>gf-picture-news</position>
 		<position>gf-lastest-news</position>
 		<position>gf-union-news</position>
+		<position>gf-gfwy</position>
+		<position>gf-lszs</position>
+		<position>gf-bcxg</position>
+		
+		<position>gf-articles</position>
 
 		<position>gf-left-1</position>
 		<position>gf-left-2</position>
