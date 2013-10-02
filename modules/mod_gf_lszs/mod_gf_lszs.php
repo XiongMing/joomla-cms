@@ -80,5 +80,5 @@ if (!empty($list)) {
 				break;
 		}
 	}
-    require JModuleHelper::getLayoutPath('mod_gf_union_news', $params->get('layout', 'default'));
+    require JModuleHelper::getLayoutPath('mod_gf_lszs', $params->get('layout', 'default'));
 }
