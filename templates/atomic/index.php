@@ -121,6 +121,9 @@ $app = JFactory::getApplication();
 			<?php endif; ?>
 		</div>
 
+		<hr />
+		<h2><center>我是华丽的分隔符，下面部分是测试保留的！</center></h2>
+		<hr />
 		<?php if($this->countModules('gf-articles')) : ?>
 			<div class="container">
 				<jdoc:include type="modules" name="gf-articles" style="gf_articles" />
