@@ -93,6 +93,18 @@ $app = JFactory::getApplication();
 				<jdoc:include type="modules" name="gf-bcxg" style="gf-bcxg" />
 			<?php endif; ?>
 
+			<?php if($this->countModules('gf-dbzl')) : ?>
+				<jdoc:include type="modules" name="gf-dbzl" style="gf-dbzl" />
+			<?php endif; ?>
+			
+			<?php if($this->countModules('gf-cgzs')) : ?>
+				<jdoc:include type="modules" name="gf-cgzs" style="gf-cgzs" />
+			<?php endif; ?>
+			
+			<?php if($this->countModules('gf-xhzc')) : ?>
+				<jdoc:include type="modules" name="gf-xhzc" style="gf-xhzc" />
+			<?php endif; ?>
+			
 			<div class="span-16 prepend-1">
 				<jdoc:include type="message" />
 				<jdoc:include type="component" />
